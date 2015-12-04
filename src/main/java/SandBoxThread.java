@@ -9,6 +9,9 @@ public class SandBoxThread implements Callable<String>{
 
     @Override
     public String call() {
+        synchronized (this) {
+            System.out.println("a");
+        }
         return "a";
     }
 }
