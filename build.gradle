@@ -19,11 +19,6 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
 
-task hoge {
-    doLast {
-        println 'hello world'
-    }
-}
 buildscript {
     ext.kotlin_version = '1.0.0-beta-3594'
     repositories {
@@ -32,7 +27,4 @@ buildscript {
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
-}
-sourceSets {
-    main.java.srcDirs += 'src/main/kotlin'
 }
