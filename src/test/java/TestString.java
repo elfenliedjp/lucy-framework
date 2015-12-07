@@ -9,12 +9,14 @@ public class TestString {
 
     @Test
     public void test() throws Exception {
+        System.out.println( "[START]TestString -------------------------" );
         if(StringUtils.isNotNullOrEmpty("a")) {
-            System.out.print("[StringUtils#isNotNullOrEmpty(a)]OK!!!/t");
+            System.out.println("[StringUtils#isNotNullOrEmpty(a)]OK!!!");
         }
 
-        if(StringUtils.isNotNullOrEmpty("")) {
-            System.out.print("[StringUtils#isNotNullOrEmpty()]OK!!!");
+        if(StringUtils.isNullOrEmpty("")) {
+            System.out.println("[StringUtils#isNullOrEmpty()]OK!!!");
         }
+        System.out.println( "[END]TestString -------------------------" );
     }
 }

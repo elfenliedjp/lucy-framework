@@ -16,7 +16,15 @@ public class StringUtils {
         return target == null;
     }
 
+    public static boolean isNull( String[] target ) {
+        return target == null;
+    }
+
     public static boolean isNotNull( String target ) {
         return !isNull(target);
+    }
+
+    public static boolean isNotNull( String[] target ) {
+        return !isNull( target );
     }
 }
